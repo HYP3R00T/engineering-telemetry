@@ -1,0 +1,43 @@
+[project]
+name = "devcontainer-python-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "prek>=0.3.11",
+  "pytest>=9.0.3",
+  "pytest-cov>=7.1.0",
+  "ruff>=0.15.12",
+  "ty>=0.0.34",
+  "zensical>=0.0.39",
+]
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+
+addopts = [
+  "-ra",              # Show summary of skipped, xfailed, etc.
+  "--strict-markers", # Fail if unknown markers are used (avoids typos)
+  "--strict-config",  # Fail on invalid config keys
+  "--tb=short",       # Shorter tracebacks (cleaner CI logs)
+]
+
+# Test discovery patterns (structure-agnostic)
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+# Explicitly declared markers (required due to --strict-markers)
+markers = [
+  "unit: fast, isolated tests with no external dependencies",
+  "integration: tests involving external systems (DB, APIs, etc.)",
+  "e2e: full system or workflow-level tests",
+  "slow: long-running tests (can be excluded in CI if needed)",
+]
+
+# Automatically handles async tests if present, no effect otherwise
+asyncio_mode = "auto"

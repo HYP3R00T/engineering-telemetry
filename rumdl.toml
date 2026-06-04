@@ -1,0 +1,18 @@
+[global]
+flavor = "standard"
+disable = [
+  "MD007", # use 4 spaces instead of 2
+  "MD013", # Line length
+  "MD033", # No inline HTML
+  "MD034", # No bare URLs
+  "MD036", # No emphasis as heading
+  "MD037", # Spaces around emphasis
+  "MD041", # First line in file should be a level 1 heading
+  "MD044", # Proper names
+  "MD046", # Code block style
+  "MD049", # Emphasis style
+  "MD059", # Link text
+]
+
+# Exclude generated or temporary content
+exclude = []
