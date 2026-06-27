@@ -6,32 +6,7 @@ repo_url = "https://github.com/HYP3R00T/devcontainer-python-template"
 site_author = "Rajesh Das"
 copyright = "Copyright &copy; 2026 Rajesh Das"
 
-nav = [
-  { Home = "index.md" },
-  { Dev = [
-    { Setup = "dev/setup/index.md" },
-    { "Template Setup" = "dev/setup/from-template.md" },
-    { Resources = "dev/resources.md" },
-    { Contributing = [
-      { "Authoring Documentation" = "dev/contributing/authoring-documentation.md" },
-      { "Naming Conventions" = "dev/contributing/naming-conventions.md" },
-      { "Documentation Principles" = [
-        { "Principle 1: No Fiction" = "dev/contributing/documentation-principles/principle-1-no-fiction.md" },
-        { "Principle 2: Single Responsibility" = "dev/contributing/documentation-principles/principle-2-single-responsibility.md" },
-        { "Principle 3: Scale by Folders" = "dev/contributing/documentation-principles/principle-3-scale-by-folders.md" },
-        { "Principle 4: Link to Code" = "dev/contributing/documentation-principles/principle-4-link-to-code.md" },
-        { "Principle 5: Format & Style" = "dev/contributing/documentation-principles/principle-5-format-style.md" },
-        { "Principle 6: Structure Uniformity" = "dev/contributing/documentation-principles/principle-6-structure-uniformity.md" },
-      ] },
-    ] },
-    { Testing = [
-      { "Unit Tests" = "dev/testing/unit-tests.md" },
-      { "Integration Tests" = "dev/testing/integration-tests.md" },
-      { "Optional Markers" = "dev/testing/optional-markers.md" },
-      { "Property Tests" = "dev/testing/property-tests.md" },
-    ] },
-  ] },
-]
+nav = [{ Home = "index.md" }]
 
 [project.theme]
 language = "en"

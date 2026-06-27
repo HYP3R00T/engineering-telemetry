@@ -3,22 +3,21 @@ python = "3.13"
 uv = "latest"
 ty = "latest"
 ruff = "latest"
+rumdl = "latest"
 prek = "latest"
 gitleaks = "latest"
 shellcheck = "latest"
 
 [settings]
 experimental = true
-python.uv_venv_auto = "source"
 idiomatic_version_file_enable_tools = ["python"]
 
 [hooks]
 enter = "bash ./scripts/enter_project.sh"
 
 [env]
-_.file = '.env'         # for sensitive data
+_.file = '.env'       # for sensitive data
 UV_LINK_MODE = "copy"
-_.python.venv = ".venv"
 
 [shell_alias]
 pya = "source ./.venv/bin/activate"
