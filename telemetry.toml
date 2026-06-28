@@ -1,0 +1,47 @@
+[project]
+data_dir = "data"
+
+[[entities]]
+id = "repository:HYP3R00T/voicepad"
+type = "repository"
+name = "voicepad workflows"
+collector = "github_actions"
+metrics = [
+  "workflow_runs_total",
+  "workflows_total",
+]
+
+[entities.source]
+provider = "github"
+external_id = "HYP3R00T/voicepad"
+
+[[entities]]
+id = "release:HYP3R00T/voicepad"
+type = "release"
+name = "voicepad releases"
+collector = "github_releases"
+metrics = [
+  "releases_total",
+  "prereleases_total",
+  "release_assets_total",
+]
+
+[entities.source]
+provider = "github"
+external_id = "HYP3R00T/voicepad"
+
+[[entities]]
+id = "package:voicepad"
+type = "package"
+name = "voicepad"
+collector = "pepy"
+metrics = [
+  "downloads_total",
+  "downloads_last_30_days",
+  "downloads_last_90_days",
+]
+
+[entities.source]
+provider = "pepy"
+external_id = "voicepad"
+api_url = "https://api.pepy.tech/api/v2/projects/voicepad"

@@ -6,7 +6,11 @@ repo_url = "https://github.com/HYP3R00T/devcontainer-python-template"
 site_author = "Rajesh Das"
 copyright = "Copyright &copy; 2026 Rajesh Das"
 
-nav = [{ Home = "index.md" }]
+nav = [
+  { Home = "index.md" },
+  { "Usage Guide" = "usage.md" },
+  { "Storage Model" = "storage-model.md" },
+]
 
 [project.theme]
 language = "en"

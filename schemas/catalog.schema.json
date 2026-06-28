@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-telemetry.local/schemas/catalog.schema.json",
+  "title": "Telemetry Catalog",
+  "type": "object",
+  "required": ["version", "generated_at", "entities"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    }
+  },
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "required": ["id", "type", "name", "source", "paths", "metrics"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["package", "repository", "workflow", "script"]
+        },
+        "name": {
+          "type": "string"
+        },
+        "source": {
+          "type": "object",
+          "required": ["provider", "external_id"],
+          "properties": {
+            "provider": {
+              "type": "string"
+            },
+            "external_id": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "paths": {
+          "type": "object",
+          "required": ["latest", "history"],
+          "properties": {
+            "latest": {
+              "type": "string"
+            },
+            "history": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

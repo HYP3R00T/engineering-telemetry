@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-telemetry.local/schemas/latest-snapshot.schema.json",
+  "title": "Latest Telemetry Snapshot",
+  "type": "object",
+  "required": ["schema_version", "entity", "captured_at", "source", "metrics"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "entity": {
+      "type": "object",
+      "required": ["id", "type", "name"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["package", "repository", "workflow", "script"]
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "required": ["provider", "fetched_at"],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "api_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "fetched_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/metric"
+      }
+    }
+  },
+  "$defs": {
+    "metric": {
+      "type": "object",
+      "required": ["value", "unit", "category"],
+      "properties": {
+        "value": {
+          "type": ["number", "integer", "string", "boolean", "null"]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["adoption", "reach", "operations", "delivery", "quality"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

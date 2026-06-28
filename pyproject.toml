@@ -1,10 +1,24 @@
 [project]
-name = "devcontainer-python-template"
+name = "engineering-telemetry"
 version = "0.1.0"
-description = "Add your description here"
+description = "A JSON-first engineering telemetry aggregator."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pydantic>=2.13.4",
+    "typer>=0.26.8",
+    "utilityhub-config>=0.2.7",
+]
+
+[project.scripts]
+engineering-telemetry = "engineering_telemetry.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [dependency-groups]
 dev = [
@@ -38,6 +52,3 @@ markers = [
   "e2e: full system or workflow-level tests",
   "slow: long-running tests (can be excluded in CI if needed)",
 ]
-
-# Automatically handles async tests if present, no effect otherwise
-asyncio_mode = "auto"

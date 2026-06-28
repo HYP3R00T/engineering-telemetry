@@ -4,30 +4,27 @@ icon: lucide/rocket
 
 # Get started
 
-Ship faster with a production-ready Python repository template built for consistency, quality, and contributor onboarding.
+Build a reusable engineering telemetry aggregator that collects adoption, delivery, and operational metrics into a JSON-first data store.
 
-This template gives you a clean starting point with development environment setup, quality gates, testing defaults, and docs workflow already wired.
+This project is focused on consolidating metrics from services like PyPI, GitHub, CI workflows, and custom analytics counters so other applications can read one normalized source of truth.
 
-## Why Teams Use This Template
+## Why This Project Exists
 
-- **Reliable setup from day one:** standardized local environments with Dev Containers, mise, and uv.
-- **Quality gates built in:** linting, formatting, type checks, and tests with coverage are ready immediately.
-- **Cleaner collaboration:** commit hooks and commit conventions catch issues before review.
-- **Docs included, not deferred:** setup, testing, and contribution docs are already structured.
-- **Local-to-CI consistency:** the commands contributors run locally match what CI enforces.
+- **Centralized telemetry:** collect metrics once and let multiple apps consume the stored results.
+- **Scheduled, not real-time:** refresh data periodically without hammering upstream APIs.
+- **Normalized output:** convert provider-specific payloads into a stable internal schema.
+- **History included:** preserve snapshots over time for reporting and trend analysis.
 
-## What You Can Do Immediately
+## What This Will Track
 
-- **Bootstrap your repo:** create a new repository from this template and start in minutes.
-- **Run quality checks:** execute lint, format, type-check, and test commands without extra scaffolding.
-- **Onboard contributors:** share clear setup and contribution guidance with your team.
-- **Ship with confidence:** keep changes predictable with consistent local and CI workflows.
+- **Package adoption:** package download totals and recent download windows.
+- **Repository reach:** stars, forks, views, clones, and release activity.
+- **Workflow operations:** CI run counts, success rates, and execution trends.
+- **Script usage:** custom analytics such as executions, unique users, or unique hosts.
 
 ## Start Here
 
-- **Create your repository:** use the template workflow and get a clean project initialized.
-  [Open the guide](dev/setup/from-template.md)
-- **Set up your development environment:** follow the daily workflow for local development and hooks.
-  [Open Developer Setup](dev/setup/index.md)
-- **Explore tools and standards:** see all project dependencies, conventions, and references.
-  [Open Resources](dev/resources.md)
+- **Learn how to run the collector:** setup, config, commands, and output locations are documented in the usage guide.
+  [Open Usage Guide](usage.md)
+- **Review telemetry storage design:** see the proposed schema and folder structure for collected metrics.
+  [Open Storage Model](storage-model.md)

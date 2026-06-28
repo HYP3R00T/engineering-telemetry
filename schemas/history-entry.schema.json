@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://engineering-telemetry.local/schemas/history-entry.schema.json",
+  "title": "Telemetry History Entry",
+  "type": "object",
+  "required": ["captured_at", "entity_id", "metric_key", "value", "unit", "source"],
+  "properties": {
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "metric_key": {
+      "type": "string"
+    },
+    "value": {
+      "type": ["number", "integer", "string", "boolean", "null"]
+    },
+    "unit": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
