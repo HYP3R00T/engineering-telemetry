@@ -1,0 +1,4 @@
+{"captured_at": "2026-06-28T04:01:38.904195Z", "entity_id": "repository:HYP3R00T/voicepad", "metric_key": "workflow_runs_total", "source": "github", "unit": "count", "value": 151}
+{"captured_at": "2026-06-28T04:01:38.904195Z", "entity_id": "repository:HYP3R00T/voicepad", "metric_key": "workflows_total", "source": "github", "unit": "count", "value": 5}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "repository:HYP3R00T/voicepad", "metric_key": "workflow_runs_total", "source": "github", "unit": "count", "value": 151}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "repository:HYP3R00T/voicepad", "metric_key": "workflows_total", "source": "github", "unit": "count", "value": 5}

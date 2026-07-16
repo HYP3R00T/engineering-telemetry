@@ -1,0 +1,3 @@
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "package:voicepad", "metric_key": "downloads_total", "source": "pepy", "unit": "count", "value": 5292}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "package:voicepad", "metric_key": "downloads_last_30_days", "source": "pepy", "unit": "count", "value": 1531}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "package:voicepad", "metric_key": "downloads_last_90_days", "source": "pepy", "unit": "count", "value": 4126}

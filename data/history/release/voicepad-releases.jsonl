@@ -1,0 +1,6 @@
+{"captured_at": "2026-06-28T04:01:38.904195Z", "entity_id": "release:HYP3R00T/voicepad", "metric_key": "releases_total", "source": "github", "unit": "count", "value": 22}
+{"captured_at": "2026-06-28T04:01:38.904195Z", "entity_id": "release:HYP3R00T/voicepad", "metric_key": "prereleases_total", "source": "github", "unit": "count", "value": 0}
+{"captured_at": "2026-06-28T04:01:38.904195Z", "entity_id": "release:HYP3R00T/voicepad", "metric_key": "release_assets_total", "source": "github", "unit": "count", "value": 0}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "release:HYP3R00T/voicepad", "metric_key": "releases_total", "source": "github", "unit": "count", "value": 22}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "release:HYP3R00T/voicepad", "metric_key": "prereleases_total", "source": "github", "unit": "count", "value": 0}
+{"captured_at": "2026-06-28T04:05:40.694478Z", "entity_id": "release:HYP3R00T/voicepad", "metric_key": "release_assets_total", "source": "github", "unit": "count", "value": 0}

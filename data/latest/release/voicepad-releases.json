@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-06-28T04:05:40.694478Z",
+  "entity": {
+    "id": "release:HYP3R00T/voicepad",
+    "name": "voicepad releases",
+    "type": "release"
+  },
+  "metrics": {
+    "prereleases_total": {
+      "category": "delivery",
+      "unit": "count",
+      "value": 0
+    },
+    "release_assets_total": {
+      "category": "delivery",
+      "unit": "count",
+      "value": 0
+    },
+    "releases_total": {
+      "category": "delivery",
+      "unit": "count",
+      "value": 22
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "api_url": "https://api.github.com/repos/HYP3R00T/voicepad/releases?per_page=100",
+    "fetched_at": "2026-06-28T04:05:42.809493Z",
+    "provider": "github",
+    "repository": "HYP3R00T/voicepad"
+  }
+}

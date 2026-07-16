@@ -1,0 +1,61 @@
+{
+  "data_dir": "data",
+  "entities": [
+    {
+      "id": "repository:HYP3R00T/voicepad",
+      "metrics": [
+        "workflow_runs_total",
+        "workflows_total"
+      ],
+      "name": "voicepad workflows",
+      "paths": {
+        "history": "data/history/repository/voicepad-workflows.jsonl",
+        "latest": "data/latest/repository/voicepad-workflows.json"
+      },
+      "source": {
+        "external_id": "HYP3R00T/voicepad",
+        "provider": "github"
+      },
+      "type": "repository"
+    },
+    {
+      "id": "release:HYP3R00T/voicepad",
+      "metrics": [
+        "releases_total",
+        "prereleases_total",
+        "release_assets_total"
+      ],
+      "name": "voicepad releases",
+      "paths": {
+        "history": "data/history/release/voicepad-releases.jsonl",
+        "latest": "data/latest/release/voicepad-releases.json"
+      },
+      "source": {
+        "external_id": "HYP3R00T/voicepad",
+        "provider": "github"
+      },
+      "type": "release"
+    },
+    {
+      "id": "package:voicepad",
+      "metrics": [
+        "downloads_total",
+        "downloads_last_30_days",
+        "downloads_last_90_days"
+      ],
+      "name": "voicepad",
+      "paths": {
+        "history": "data/history/package/voicepad.jsonl",
+        "latest": "data/latest/package/voicepad.json"
+      },
+      "source": {
+        "api_url": "https://api.pepy.tech/api/v2/projects/voicepad",
+        "external_id": "voicepad",
+        "provider": "pepy"
+      },
+      "type": "package"
+    }
+  ],
+  "generated_at": "2026-06-28T04:05:40.694478Z",
+  "version": 1
+}

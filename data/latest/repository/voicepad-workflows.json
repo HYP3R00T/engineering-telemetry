@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-06-28T04:05:40.694478Z",
+  "entity": {
+    "id": "repository:HYP3R00T/voicepad",
+    "name": "voicepad workflows",
+    "type": "repository"
+  },
+  "metrics": {
+    "workflow_runs_total": {
+      "category": "operations",
+      "unit": "count",
+      "value": 151
+    },
+    "workflows_total": {
+      "category": "operations",
+      "unit": "count",
+      "value": 5
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "api_url": "https://api.github.com/repos/HYP3R00T/voicepad/actions/runs?per_page=1",
+    "fetched_at": "2026-06-28T04:05:41.857139Z",
+    "provider": "github",
+    "repository": "HYP3R00T/voicepad"
+  }
+}
